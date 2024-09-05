@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: roboshop-user-deployment
+  namespace: Clahantec
 spec:
   replicas: 3
   selector:
@@ -24,3 +25,5 @@ spec:
           limits:
             memory: "128Mi"
             cpu: "500m"
+
+            
